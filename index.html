@@ -13,7 +13,7 @@
 <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
      <h1 class="text-2xl">Greenden</h1>
 
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 h-6 w-6 md:hidden">
+<svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 h-6 w-6 md:hidden">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 </svg>
 
@@ -31,6 +31,39 @@
 
      </ul>
 </nav>
+<!--sidenavbar-->
+<section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh;right: -50%;">
+<div class="text-right p-5">
+  <p id="closenav" class="inline cursor-pointer">X</p>
+</div>
+
+  <ul class="flex  flex-col items-center gap-10 text-gray-600 ">
+
+        <li>
+            <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+        <li>
+            <a  class="hover:underline hover:text-black" href="product.html">Products</a>
+
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+        </li>
+
+     </ul>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
 <!--header section-->
 <section class="bg-green-100 p-4 md:p-10 flex justify-center">
  <div>  
@@ -112,7 +145,7 @@
 <div class="flex flex-col gap-5 justify-center text-white m-5">
    <div class="bg-green-900 p-5 container"> 
    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tempora soluta earum, eos possimus maxime minus a omnis et doloremque, id ex illo autem porro. Modi blanditiis recusandae numquam itaque asperiores reprehenderit. Eos dolore quasi, reprehenderit obcaecati accusantium quo blanditiis at consectetur dolorum ipsum libero officiis aperiam repudiandae sunt labore modi nulla veniam, dicta doloremque? Similique dolore delectus minus reiciendis repellat possimus saepe pariatur exercitationem.</p>
-    <p class="font-bold text-yellow-300 justify-start">Genny mathew</p>
+    <p class="font-bold text-yellow-300">Genny mathew</p>
    </div>
  <div class="bg-green-900 p-5 container"> 
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequuntur esse maiores cum doloribus, expedita ratione repellat quo quisquam sit ipsam odit voluptatibus unde nihil quas ea dignissimos omnis! Blanditiis cumque deserunt porro eum harum sint vitae voluptatum deleniti eius. Aliquam, qui laboriosam laudantium expedita molestiae recusandae veniam fuga dolorum hic rem accusamus perspiciatis nisi aspernatur sunt velit non deserunt esse nesciunt nostrum corporis! Expedita iste omnis ducimus maxim.</p>
@@ -142,5 +175,6 @@
 
 </section>
 
-
+<script src="index.js"></script>
 </body>
+</html>

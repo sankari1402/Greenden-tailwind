@@ -13,7 +13,7 @@
 <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
      <h1 class="text-2xl">Greenden</h1>
 
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 h-6 w-6 md:hidden">
+<svg id="menuicon"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 h-6 w-6 md:hidden">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 </svg>
 
@@ -32,11 +32,33 @@
      </ul>
 
 </nav>
+<!--sidenavbar-->
+<section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh;right: -50%;">
+<div class="text-right p-5">
+  <p id="closenav" class="inline cursor-pointer">X</p>
+</div>
+
+  <ul class="flex  flex-col items-center gap-10 text-gray-600 ">
+
+        <li>
+            <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+        <li>
+            <a  class="hover:underline hover:text-black" href="product.html">Products</a>
+
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+        </li>
+
+     </ul>
+
+</section>
 <!--Products-->
 <section class="text-center">
       <h2 class="text-3xl font-bold text-center P-5 mt-7">Our Products</h2>
-      <input type="text" placeholder="Sarch for a products..." class="p-5 border border-black mt-5" style="width: 70%;">
-    <div class="grid grid-cols-2 grid-rows-4 md:grid-cols-4 grid-rows-2 p-5 mt-5 gap-5">
+      <input id="sarch"  type="text" placeholder="Sarch for a products..." class="p-5 border border-black mt-5" style="width: 70%;">
+    <div id="product-container" class="grid grid-cols-2 grid-rows-4 md:grid-cols-4 grid-rows-2 p-5 mt-5 gap-5">
     <div>
       <img src="./images/product-1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2">
       <h1>Rose plant</h1>
@@ -82,3 +104,6 @@
 
     </div>
 </section>
+<script src="product.js"></script>
+</body>
+</html>
